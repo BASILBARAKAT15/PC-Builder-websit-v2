@@ -1,94 +1,53 @@
-
-
-
 # 💻 PC Builder Website v2
+> A high-performance, interactive web application for custom PC configuration and compatibility management.
 
-A modern web application that allows users to build their own custom PC by selecting compatible components. This project focuses on providing a smooth user experience, intuitive UI, and dynamic component selection.
+[![GitHub repo size](https://img.shields.io/github/repo-size/BASILBARAKAT15/PC-Builder-websit-v2?style=for-the-badge&color=blue)](https://github.com/BASILBARAKAT15/PC-Builder-websit-v2)
+[![GitHub last commit](https://img.shields.io/github/last-commit/BASILBARAKAT15/PC-Builder-websit-v2?style=for-the-badge&color=green)](https://github.com/BASILBARAKAT15/PC-Builder-websit-v2)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
-🚀 Features
-🧩 PC Builder System
-Select components like CPU, GPU, RAM, Storage, etc.
-Add/remove parts dynamically
-Build a complete custom PC configuration
-📦 Product Catalog
-Browse components by category
-View detailed product information
-Clean and responsive product cards
-🔍 Component Details Page
-Full specifications for each part
-Price, availability, and features
-⚡ Dynamic UI
-Fast and responsive design
-Smooth navigation between pages
-🔐 Authentication (optional)
-User login/signup (if implemented)
-Protected builder functionality
-🛠️ Tech Stack
-Frontend: Next.js / React
-Styling: Tailwind CSS / CSS
-Backend: API Routes / Node.js (if used)
-State Management: Context API / Redux (if used)
-Authentication: NextAuth (optional)
-📁 Project Structure
-PC-Builder-websit-v2/
-│── public/          # Static assets
-│── src/
-│   ├── components/  # Reusable UI components
-│   ├── pages/       # Application pages
-│   ├── styles/      # Styling files
-│   └── utils/       # Helper functions
-│── package.json
-│── README.md
-⚙️ Installation & Setup
+---
 
-Follow these steps to run the project locally:
+## 📑 Overview
+**PC Builder v2** is a refined solution for PC enthusiasts and builders. It simplifies the complex process of selecting computer parts by providing a structured, dynamic interface. Built with a focus on **User Experience (UX)** and **System Performance**, this version features a decoupled architecture for better scalability and maintenance.
 
-# Clone the repository
-git clone https://github.com/BASILBARAKAT15/PC-Builder-websit-v2.git
+---
 
-# Navigate into the project
-cd PC-Builder-websit-v2
+## 🚀 Key Features
 
-# Install dependencies
-npm install
+### 🧩 Intelligent Configuration
+* **Dynamic Selection:** Seamlessly add or swap components (CPU, GPU, RAM) with real-time UI updates.
+* **Smart Filtering:** Browse components categorized by performance tier and technical compatibility.
+* **Persistent Builds:** Tracks your current configuration across sessions using local state management.
 
-# Run development server
-npm run dev
+### 📦 Component Management
+* **Detailed Catalog:** High-resolution images and comprehensive specification sheets for every part.
+* **Live Pricing Overview:** Integrated price tracking to help users stay within budget.
 
-Open your browser and go to:
+### ⚡ Technical Excellence
+* **Responsive Design:** Fully optimized for Mobile, Tablet, and Desktop environments.
+* **Zero-Lag Navigation:** High-speed transitions between the component catalog and the building dashboard.
 
-http://localhost:3000
-🧠 How It Works
-Users browse PC components by category
-Select desired parts and add them to the builder
-The system tracks selected components
-Once enough components are selected, users can complete their build
+---
 
-This approach is commonly used in PC builder apps where users configure systems interactively .
+## 🛠️ Tech Stack
 
-📸 Screenshots
+| Layer | Technology |
+| :--- | :--- |
+| **Frontend** | [Next.js](https://nextjs.org/) / [React.js](https://reactjs.org/) |
+| **Styling** | [Tailwind CSS](https://tailwindcss.com/) |
+| **State Management** | React Context API / Hooks |
+| **Backend** | [Node.js](https://nodejs.org/) & API Routes |
+| **AI Engine** | [Groq Cloud API](https://groq.com/) (Llama-3 Integration) |
 
-Add screenshots here (Home page, Builder page, Product page)
+---
 
-🌟 Future Improvements
-✅ Compatibility checking between components
-💾 Save and load builds
-🛒 E-commerce integration
-⭐ User reviews and ratings
-📊 Price comparison system
-🤝 Contributing
+## 📂 Architecture Preview
 
-Contributions are welcome!
-
-Fork the repository
-Create a new branch
-Make your changes
-Submit a pull request
-📄 License
-
-This project is licensed under the MIT License.
-
-📬 Contact
-
-Created by Basil Barakat
-Feel free to reach out for feedback or collaboration!
+```text
+src/
+├── components/     # Atomic Design: Reusable UI components (Buttons, Cards, Modals)
+├── hooks/          # Custom React hooks for business and data logic
+├── layouts/        # Page wrapper components for consistent branding
+├── pages/          # File-based routing and page entry points
+├── styles/         # Global Tailwind and CSS configurations
+└── utils/          # Formatting logic, validators, and helper constants
